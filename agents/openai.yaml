@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude Controller"
+  short_description: "Let Claude (Opus) test, review and verify a Codex-built project"
+  default_prompt: "Use Claude Controller to test and review this project and tell me if it is ready to ship."
+policy:
+  allow_implicit_invocation: false

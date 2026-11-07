@@ -1,0 +1,29 @@
+CLAUDE CONTROLLER fuer Codex
+============================
+
+Was es macht
+  Codex baut dein Projekt. Dieser Skill laesst Claude (die KI von Anthropic)
+  das Ergebnis danach pruefen: testen, Fehler suchen, Fixes nachkontrollieren
+  und sagen, ob es fertig ist. Claude aendert nichts, ausser du sagst es ausdruecklich.
+
+Einmal einrichten (3 Minuten)
+  1. Doppelklick auf  INSTALLIEREN.bat
+  2. Wenn gefragt: mit J bestaetigen und im Browser bei Claude anmelden.
+  3. Fertig.
+
+Benutzen
+  Oeffne Codex in deinem Projektordner und schreibe zum Beispiel:
+    $claude-controller  Pruefe mein Projekt und sag mir, ob es fertig ist.
+    $claude-controller  Teste alles und liste die Fehler auf.
+    $claude-controller  Mach eine kritische Pruefung der Sicherheit.
+    $claude-controller  Wurden meine Fixes wirklich behoben?
+
+  Danach zeigt Codex dir Claudes Ergebnis und fragt, was repariert werden soll.
+  Es wird nie etwas ohne dein Ja geaendert.
+
+Gut zu wissen
+  - Jede Pruefung verbraucht Claude-Guthaben (meist wenige Cent bis wenige Euro).
+    Pro Aufruf ist bei 2 Dollar Schluss; am Ende steht, was es gekostet hat.
+  - Codex fragt eventuell, ob es einen Befehl "ausserhalb der Sandbox" ausfuehren darf.
+    Das darfst du erlauben, sonst kommt Claude nicht ins Internet.
+  - Du brauchst: Codex, Node.js und Claude Code (npm install -g @anthropic-ai/claude-code).
